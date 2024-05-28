@@ -7,7 +7,7 @@ let memf = document.getElementById("memf")
 let litg = document.getElementById("litg")
 let kilp = document.getElementById("kilp")
 const covertBtn = document.getElementById("convert")
-let input = document.getElementById("myInput").value = 0
+let input = document.getElementById("myInput").value = ""
 
 covertBtn.addEventListener("click", function() {
         let input = document.getElementById("myInput").value
