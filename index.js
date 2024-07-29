@@ -15,6 +15,13 @@ function overhall(number, measurement, convertValue, firstUnit, secondUnit){
     measurement.textContent = `${number} ${firstUnit} = ${firstDight.toFixed(3)} ${secondUnit} | ${number} ${secondUnit} = ${secondDight.toFixed(3)} ${firstUnit} `
 }
 
+covertBtn.addEventListener("click", function() {
+        let input = document.getElementById("myInput").value 
+        
+        overhall(input, memf, 3.281, 'meters','feets')
+        overhall(input, litg, 0.264, 'liters','gallons')
+        overhall(input, kilp, 2.204, 'kilos','pounds')
+    })
 
 // function meters(number){
 //     let meter = number * 3.281
@@ -28,12 +35,4 @@ function overhall(number, measurement, convertValue, firstUnit, secondUnit){
 //     let kilo = number * 2.204
 //     let pound = number / 2.204
 //     kilp.textContent = `${number} pounds = ${kilo.toFixed(3)} pounds | ${number} pounds = ${pound.toFixed(3)} kilos`
-
 // }
-covertBtn.addEventListener("click", function() {
-        let input = document.getElementById("myInput").value 
-        
-        overhall(input, memf, 3.281, 'meters','feets')
-        overhall(input, litg, 0.264, 'liters','gallons')
-        overhall(input, kilp, 2.204, 'kilos','pounds')
-    })
